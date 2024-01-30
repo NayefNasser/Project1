@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Nayef Nasser">
+        <meta name="description" content="First HTML Project">
+        <title>Contact Form</title>
+        <style>
+            html
+            {
+            font-size: 22px;
+            }
+            body
+            {
+            background-color: #333;
+            color: whitesmoke;
+            }
+
+        </style>
+        <link rel="icon" href="photo1.jpg" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <h1>Welcome To Our Contact Form!</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#personalInfo">Personal Info</a>
+                    </li>
+                    <li>
+                        <a href="#footballQuestions">Football Interests</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Back To Main</a>
+                    </li>
+                </ul>
+            </nav>
+            <figure>
+                <img src="photo3.jpg" alt="Stadium" width="375" height="367">
+            </figure>
+            <i><figcaption>Piece of ART...</figcaption></i>
+        </header>
+        <hr>
+        <main>
+            <h2>Well, You're Here!</h2>
+            <p>This page provides the chance for every user to share some of his interests with us... so scroll down to fill the following blanks</p>
+            <br>
+            <h2>Personal Info.</h2>
+            <h3>Fill the following Form to let us know about you:</h3>
+            <form action="https://httpbin.org/get">
+                <fieldset id="personalInfo">
+                    <legend>Personal Info</legend>
+
+                    <p><label for="firstname">FirstName:</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Enter here..." autocomplete="on" required></p>
+                    <p><label for="lastname">LastName:</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Enter here..." autocomplete="on" required></p>
+                    <p>
+                        <label for="mail"> &nbsp;Email:</label>
+                        <input type="email" name="mail" id="mail" placeholder="random@something.com" autocomplete="on" required>
+                    </p>
+                    <p><label for="pass">Password:</label>
+                        <input type="password" name="pass" id="pass" placeholder="Enter here..." autocomplete="off" required></p>
+                </fieldset>
+                <h3>GREAT THE FIRST FORM IS DONE, NOW LET ME HEAR ABOUT YOUR INTERESTS...</h3>
+                <fieldset id="footballQuestions">
+                    <legend>Your Interests</legend>
+
+                    <p><label for="favplayer">Favorite Player:</label>
+                        <input type="text" name="favplayer" id="favplayer" placeholder="Enter here..." autocomplete="on" required></p>
+                    <p><label for="favteam">Favorite Team:</label>
+                        <input type="text" name="favteam" id="favteam" placeholder="Enter here..." autocomplete="on" required></p>
+                    <p><label for="favstadium">Favorite Stadium:</label>
+                        <input type="text" name="favstadium" id="favstadium" placeholder="Enter here..." autocomplete="on" required></p>
+                    <p><label for="favpeak">Favorite Peak:</label>
+                        <input type="text" name="favpeak" id="favpeak" placeholder="Enter here..." autocomplete="on" required></p>
+                </fieldset>
+            </form>
+            <h3>Great, Thank You For Filling The Form!</h3>
+        </main>
+        <hr>
+        <footer>
+            <p>Copyrights: &copy;<abbr title="International Association of Surveys">IAOS</abbr></p>
+        </footer>
+    </body>
+</html>
